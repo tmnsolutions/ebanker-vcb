@@ -62,6 +62,8 @@ with sync_playwright() as p:
         browser.close()
         exit()
 
+    page.click("//a[contains(text(), 'Truy vấn thông tin')]")
+
     # click the text which contains the account number
     page.click("//a[contains(text(), '"+accountNo+"')]")
 
